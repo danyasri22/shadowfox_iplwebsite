@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK Squad | The Lions of Chennai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #020617; font-family: 'Poppins', sans-serif; }
+        .player-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(15, 23, 42, 0.6));
+            backdrop-filter: blur(10px);
+        }
+        .player-card:hover {
+            transform: translateY(-10px);
+            border-color: #facc15;
+            box-shadow: 0 20px 40px -10px rgba(250, 204, 21, 0.2);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="text-white pb-20">
+
+    <nav class="p-6 border-b border-white/5 sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-yellow-400 font-bold hover:text-white transition tracking-tighter">← HOME</a>
+            <h1 class="text-xl font-black italic tracking-widest uppercase">Official <span class="text-yellow-400">Squad</span></h1>
+            <a href="stats.html" class="text-yellow-400 font-bold hover:text-white transition tracking-tighter">STATS →</a>
+        </div>
+    </nav>
+
+    <header class="py-16 text-center">
+        <h2 class="text-5xl md:text-6xl font-black italic text-yellow-400 mb-2 drop-shadow-2xl">MEET THE LIONS</h2>
+        <p class="text-slate-400 uppercase tracking-[0.4em] text-xs font-bold">Season 2026 Core Team</p>
+    </header>
+
+    <main class="container mx-auto px-4 lg:px-12">
+        
+        <h3 class="text-2xl font-bold mb-8 border-l-4 border-yellow-400 pl-4 uppercase italic">Leadership</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+            
+            <div class="player-card border border-white/10 rounded-[2.5rem] overflow-hidden p-6">
+                <div class="relative h-72 bg-slate-800/50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden group">
+                    <img src="image\assets\dhoni.avif" alt="MS Dhoni" class="w-full h-full object-contain object-top pt-6 group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-yellow-400 text-blue-900 px-4 py-1 rounded-full font-black text-[10px] uppercase">WK / Finisher</span>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-black uppercase italic">MS Dhoni</h4>
+                <p class="text-yellow-400 font-bold mb-4 text-xs tracking-widest uppercase opacity-80">The Thala</p>
+                <div class="flex justify-between border-t border-white/10 pt-5">
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Matches</p><p class="font-bold text-lg">250+</p></div>
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Titles</p><p class="font-bold text-lg">5</p></div>
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Role</p><p class="font-bold text-lg text-yellow-400">Legend</p></div>
+                </div>
+            </div>
+
+            <div class="player-card border border-white/10 rounded-[2.5rem] overflow-hidden p-6">
+                <div class="relative h-72 bg-slate-800/50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden group">
+                    <img src="image\assets\gaikwad.avif" alt="Ruturaj Gaikwad" class="w-full h-full object-contain pt-6 group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-blue-600 text-white px-4 py-1 rounded-full font-black text-[10px] uppercase">Opening Batter</span>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-black uppercase italic">R. Gaikwad</h4>
+                <p class="text-yellow-400 font-bold mb-4 text-xs tracking-widest uppercase opacity-80">Captain</p>
+                <div class="flex justify-between border-t border-white/10 pt-5">
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">S/R</p><p class="font-bold text-lg">137.5</p></div>
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Runs</p><p class="font-bold text-lg">2500+</p></div>
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Age</p><p class="font-bold text-lg">29</p></div>
+                </div>
+            </div>
+
+            <div class="player-card border border-white/10 rounded-[2.5rem] overflow-hidden p-6">
+                <div class="relative h-72 bg-slate-800/50 rounded-3xl mb-4 flex items-center justify-center overflow-hidden group">
+                    <img src="image\assets\jadega.avif" alt="Ravindra Jadeja" class="w-full h-full object-contain pt-6 group-hover:scale-110 transition duration-500">
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-green-600 text-white px-4 py-1 rounded-full font-black text-[10px] uppercase">All-Rounder</span>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-black uppercase italic">R. Jadeja</h4>
+                <p class="text-yellow-400 font-bold mb-4 text-xs tracking-widest uppercase opacity-80">Sir Jadeja</p>
+                <div class="flex justify-between border-t border-white/10 pt-5">
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Wickets</p><p class="font-bold text-lg">170</p></div>
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Sixes</p><p class="font-bold text-lg">115+</p></div>
+                    <div class="text-center"><p class="text-[10px] text-slate-500 font-bold uppercase">Matches</p><p class="font-bold text-lg">250+</p></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-8 border-l-4 border-blue-500 pl-4 uppercase italic">Full Squad 2026</h3>
+        <div class="glass-panel rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-white/5 uppercase text-[10px] font-black tracking-[0.2em] text-slate-400 border-b border-white/5">
+                        <tr>
+                            <th class="p-6">Player</th>
+                            <th class="p-6">Role</th>
+                            <th class="p-6">Nationality</th>
+                            <th class="p-6 text-right">Status</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody class="divide-y divide-white/5 font-medium text-sm">
+    <tr class="hover:bg-yellow-400/5 transition group bg-yellow-400/5">
+        <td class="p-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center text-[10px] font-black shadow-lg">SS</div>
+                <span class="group-hover:text-yellow-400 transition font-bold">Sanju Samson</span>
+            </div>
+        </td>
+        <td class="p-6 text-slate-400">WK-Batter (Trade)</td>
+        <td class="p-6">₹18.00 Cr</td>
+        <td class="p-6 text-right"><span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-blue-500/30">Marquee</span></td>
+    </tr>
+
+    <tr class="hover:bg-yellow-400/5 transition group">
+        <td class="p-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold">PV</div>
+                <span class="group-hover:text-yellow-400 transition">Prashant Veer</span>
+            </div>
+        </td>
+        <td class="p-6 text-slate-400">All-Rounder</td>
+        <td class="p-6">₹14.20 Cr</td>
+        <td class="p-6 text-right"><span class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-green-500/20">New Buy</span></td>
+    </tr>
+
+    <tr class="hover:bg-yellow-400/5 transition group">
+        <td class="p-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold">KS</div>
+                <span class="group-hover:text-yellow-400 transition">Kartik Sharma</span>
+            </div>
+        </td>
+        <td class="p-6 text-slate-400">WK-Batter</td>
+        <td class="p-6">₹14.20 Cr</td>
+        <td class="p-6 text-right"><span class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-green-500/20">New Buy</span></td>
+    </tr>
+
+    <tr class="hover:bg-yellow-400/5 transition group">
+        <td class="p-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold">NA</div>
+                <span class="group-hover:text-yellow-400 transition">Noor Ahmad</span>
+            </div>
+        </td>
+        <td class="p-6 text-slate-400">Bowler (Spin)</td>
+        <td class="p-6">₹10.00 Cr</td>
+        <td class="p-6 text-right"><span class="bg-slate-500/20 text-slate-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-white/10">Retained</span></td>
+    </tr>
+
+    <tr class="hover:bg-yellow-400/5 transition group">
+        <td class="p-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold">RC</div>
+                <span class="group-hover:text-yellow-400 transition">Rahul Chahar</span>
+            </div>
+        </td>
+        <td class="p-6 text-slate-400">Bowler (Spin)</td>
+        <td class="p-6">₹5.20 Cr</td>
+        <td class="p-6 text-right"><span class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-green-500/20">Auction</span></td>
+    </tr>
+
+    <tr class="hover:bg-yellow-400/5 transition group">
+        <td class="p-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-bold">SK</div>
+                <span class="group-hover:text-yellow-400 transition">Sarfaraz Khan</span>
+            </div>
+        </td>
+        <td class="p-6 text-slate-400">Batter</td>
+        <td class="p-6">₹75 Lakh</td>
+        <td class="p-6 text-right"><span class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-green-500/20">Auction</span></td>
+    </tr>
+</tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

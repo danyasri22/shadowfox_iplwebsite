@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" id="body" class="transition-colors duration-300">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK | Official Fixtures 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --csk-yellow: #facc15; --csk-blue: #1e3a8a; }
+        .dark-mode { background-color: #0f172a; color: white; }
+        .dark-mode .glass-card { background: rgba(30, 41, 59, 0.7); border-color: rgba(255,255,255,0.1); }
+        .glass-card { backdrop-filter: blur(12px); transition: transform 0.3s ease; }
+        .status-badge { font-size: 0.65rem; padding: 2px 8px; border-radius: 99px; font-weight: 800; text-transform: uppercase; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen pb-20 dark-mode">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <a href="index.html" class="text-2xl font-black italic tracking-tighter hover:text-yellow-400">CSK<span class="text-yellow-400">PORTAL</span></a>
+        <div class="flex gap-6 items-center">
+            <a href="squad.html" class="font-bold text-sm uppercase hover:text-yellow-400">Squad</a>
+            <a href="stats.html" class="font-bold text-sm uppercase hover:text-yellow-400">Stats</a>
+            <button id="theme-toggle" class="p-2 rounded-full bg-yellow-400 text-blue-900 shadow-lg"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4">
+        <header class="mb-12">
+            <h2 class="text-5xl font-black italic mb-2 tracking-tight uppercase">Fixtures <span class="text-yellow-400 text-3xl font-normal not-italic block">Season 2026</span></h2>
+            <div class="h-2 w-24 bg-yellow-400 rounded-full"></div>
+            <p class="mt-4 text-slate-400 text-sm max-w-md">Follow the Lions as they roar across India. Note: Some home games may be moved to Ranchi/Thiruvananthapuram due to elections.</p>
+        </header>
+
+        <div class="space-y-6">
+            
+            <div class="glass-card border border-slate-200 p-6 rounded-[2.5rem] flex flex-wrap md:flex-nowrap items-center justify-between gap-6 hover:shadow-2xl hover:-translate-y-1">
+                <div class="flex items-center gap-6">
+                    <div class="text-center bg-yellow-400 text-blue-900 p-4 rounded-3xl min-w-[90px] shadow-xl">
+                        <p class="text-xs font-black uppercase">MAR</p>
+                        <p class="text-3xl font-black leading-none">26</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="status-badge bg-blue-600 text-white animate-pulse">Live Soon</span>
+                            <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Match 01 • 7:30 PM</span>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase italic">CSK <span class="text-yellow-400">vs</span> RCB</h3>
+                        <p class="text-sm text-slate-400"><i class="fas fa-map-marker-alt text-yellow-400 mr-1"></i> M.A. Chidambaram Stadium, Chennai</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full md:w-auto">
+                    <button class="flex-1 md:flex-none border-2 border-yellow-400 px-6 py-2 rounded-full text-xs font-black hover:bg-yellow-400 hover:text-blue-900 transition uppercase tracking-widest">Tickets</button>
+                    <button class="bg-white/10 p-3 rounded-full hover:bg-yellow-400 hover:text-blue-900 transition"><i class="far fa-bell"></i></button>
+                </div>
+            </div>
+
+            <div class="glass-card border border-slate-200 p-6 rounded-[2.5rem] flex flex-wrap md:flex-nowrap items-center justify-between gap-6 hover:shadow-2xl hover:-translate-y-1">
+                <div class="flex items-center gap-6 opacity-80">
+                    <div class="text-center bg-slate-800 text-slate-400 p-4 rounded-3xl min-w-[90px]">
+                        <p class="text-xs font-black uppercase">MAR</p>
+                        <p class="text-3xl font-black leading-none">30</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="status-badge bg-slate-700 text-slate-300">Away</span>
+                            <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Match 05 • 7:30 PM</span>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase italic">LSG <span class="text-yellow-400">vs</span> CSK</h3>
+                        <p class="text-sm text-slate-400"><i class="fas fa-map-marker-alt text-yellow-400 mr-1"></i> Ekana Stadium, Lucknow</p>
+                    </div>
+                </div>
+                <button class="w-full md:w-auto bg-slate-800 text-slate-500 px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest cursor-not-allowed">Coming Soon</button>
+            </div>
+
+            <div class="glass-card border border-slate-200 p-6 rounded-[2.5rem] flex flex-wrap md:flex-nowrap items-center justify-between gap-6 hover:shadow-2xl hover:-translate-y-1">
+                <div class="flex items-center gap-6">
+                    <div class="text-center bg-yellow-400 text-blue-900 p-4 rounded-3xl min-w-[90px] shadow-xl">
+                        <p class="text-xs font-black uppercase">APR</p>
+                        <p class="text-3xl font-black leading-none">04</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="status-badge bg-orange-600 text-white">Special Venue</span>
+                            <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Match 12 • 3:30 PM</span>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase italic">CSK <span class="text-yellow-400">vs</span> MI</h3>
+                        <p class="text-sm text-slate-400"><i class="fas fa-map-marker-alt text-red-500 mr-1"></i> JSCA Stadium, Ranchi (Home)</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full md:w-auto">
+                    <button class="flex-1 md:flex-none border-2 border-yellow-400 px-6 py-2 rounded-full text-xs font-black hover:bg-yellow-400 hover:text-blue-900 transition uppercase tracking-widest">Notify Me</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 left-0 w-full bg-blue-900 text-white p-4 shadow-[0_-10px_20px_rgba(0,0,0,0.3)]">
+        <div class="max-w-5xl mx-auto flex justify-between items-center text-xs font-bold uppercase tracking-widest">
+            <p>Total Matches: 14</p>
+            <p class="text-yellow-400">Next: vs RCB (7d 04h left)</p>
+            <p>Home: 07 | Away: 07</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

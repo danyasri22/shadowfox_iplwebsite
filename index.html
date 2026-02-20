@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK | Official Fan Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Essential custom classes for the premium look */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark-mode .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-slate-50 font-['Poppins'] transition-colors duration-500" id="body">
+
+    <nav class="bg-blue-900 p-4 sticky top-0 z-50 shadow-2xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-yellow-400 text-2xl font-black tracking-tighter italic">CHENNAI <span class="text-white">SUPER KINGS</span></a>
+            <ul class="hidden md:flex space-x-8 text-white font-semibold uppercase text-sm">
+                <li><a href="index.html" class="text-yellow-400 border-b-2 border-yellow-400">Home</a></li>
+                <li><a href="squad.html" class="hover:text-yellow-400 transition">Squad</a></li>
+                <li><a href="schedule.html" class="hover:text-yellow-400 transition">Schedule</a></li>
+                <li><a href="stats.html" class="hover:text-yellow-400 transition">Stats</a></li>
+            </ul>
+            <button id="theme-toggle" class="bg-yellow-400 p-2 rounded-lg text-blue-900 font-bold hover:scale-110 transition">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="relative h-[70vh] flex items-center justify-center bg-blue-900 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="https://www.chennaisuperkings.com/assets/images/csk-logo.png" class="w-full h-full object-contain scale-150" alt="bg">
+        </div>
+        <div class="relative z-10 text-center px-4 animate-fade-in">
+            <h2 class="text-yellow-400 text-6xl md:text-8xl font-black mb-4 drop-shadow-2xl italic">WHISTLE PODU</h2>
+            <p class="text-white text-xl md:text-2xl font-light mb-8">The Legacy Continues. The Pride Returns.</p>
+            <a href="#fan-section" class="bg-yellow-400 text-blue-900 px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_20px_rgba(250,204,21,0.6)] transition transform hover:-translate-y-1">JOIN THE FAN CLUB</a>
+        </div>
+    </header>
+
+    <section class="container mx-auto -mt-16 relative z-20 px-4">
+        <div class="bg-white/90 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-white/20 text-center">
+            <h3 class="text-blue-900 font-bold mb-6 uppercase tracking-[0.3em] text-sm">Next Match Countdown</h3>
+            <div id="countdown-top" class="flex justify-center gap-4 md:gap-8 text-3xl md:text-5xl font-black text-blue-900">
+                <div class="flex flex-col"><span id="days" class="bg-yellow-400 px-4 py-2 rounded-xl">00</span><span class="text-xs mt-2 uppercase">Days</span></div>
+                <div class="flex flex-col"><span id="hours" class="bg-yellow-400 px-4 py-2 rounded-xl">00</span><span class="text-xs mt-2 uppercase">Hrs</span></div>
+                <div class="flex flex-col"><span id="mins" class="bg-yellow-400 px-4 py-2 rounded-xl">00</span><span class="text-xs mt-2 uppercase">Mins</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-yellow-500/10 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent mb-4">Upcoming Match</h2>
+                <p class="text-xl text-slate-600/80 dark:text-slate-400/80">February 22, 2026 • M. A. Chidambaram Stadium</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="glass-card p-10 rounded-3xl shadow-2xl hover:shadow-yellow-500/25 transition-all duration-700 text-center">
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 mb-8">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-4 shadow-xl">
+                                <i class="fas fa-chess-knight text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">CSK</h3>
+                        </div>
+                        <div class="text-yellow-500 font-black text-3xl italic">VS</div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center mb-4 shadow-xl">
+                                <i class="fas fa-chess-queen text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-700">MI</h3>
+                        </div>
+                    </div>
+                    <button class="bg-blue-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-800 transition">Book Tickets</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-500">
+                        <h4 class="font-bold text-xl mb-4 flex items-center"><i class="fas fa-stadium text-yellow-500 mr-3"></i>Chepauk</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between"><span>Capacity</span><span class="font-bold">38,000</span></div>
+                            <div class="flex justify-between"><span>Home Wins</span><span class="font-bold text-green-500">127</span></div>
+                            <div class="flex justify-between font-bold text-lg mt-2"><span>Avg 1st Inn</span><span>172</span></div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-500">
+                        <h4 class="font-bold text-xl mb-4 flex items-center"><i class="fas fa-history text-yellow-500 mr-3"></i>H2H</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="font-semibold">CSK vs MI</span>
+                                <span class="font-bold">18-16</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 52%"></div>
+                            </div>
+                            <p class="text-xs text-slate-500 text-center italic">CSK has a slight edge 🦁</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fan-section" class="py-24 bg-gradient-to-br from-yellow-500/20 via-orange-300/20 to-yellow-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Join the Whistle Podu Army! 🦁</h2>
+                <p class="text-lg text-slate-700 max-w-2xl mx-auto">Be part of the Yellow Army. Engage, cheer, and celebrate every CSK victory!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border-l-8 border-yellow-400 lg:col-span-1">
+                    <h3 class="text-xl font-bold text-blue-900 mb-6 underline decoration-yellow-400">Favorite Player Poll</h3>
+                    <div class="space-y-4">
+                        <button onclick="vote('MSD')" class="w-full text-left p-4 rounded-xl border-2 border-slate-100 hover:border-yellow-400 transition-all flex justify-between items-center">
+                            <span class="font-bold">MS Dhoni</span>
+                            <i class="fas fa-crown text-yellow-500"></i>
+                        </button>
+                        <button onclick="vote('Rutu')" class="w-full text-left p-4 rounded-xl border-2 border-slate-100 hover:border-yellow-400 transition-all flex justify-between items-center">
+                            <span class="font-bold">Ruturaj Gaikwad</span>
+                            <i class="fas fa-bolt text-blue-500"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-xl p-8 text-center border border-slate-200 hover:shadow-yellow-400/50 transition transform hover:-translate-y-2">
+                    <i class="fas fa-users text-yellow-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Fan Meetups</h3>
+                    <p class="text-gray-600 text-sm">Join local fan clubs and meet fellow CSK supporters for screenings.</p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-xl p-8 text-center border border-slate-200 hover:shadow-yellow-400/50 transition transform hover:-translate-y-2">
+                    <i class="fas fa-hashtag text-yellow-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Social Challenges</h3>
+                    <p class="text-gray-600 text-sm">Participate in weekly challenges and win signed merchandise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-black text-blue-900 dark:text-yellow-400 mb-16 text-center italic">THE GOLDEN JOURNEY</h2>
+            <div class="relative border-l-4 border-blue-900 dark:border-yellow-400 ml-4 md:mx-auto md:w-fit">
+                <div class="mb-10 ml-8 relative">
+                    <div class="absolute -left-[42px] mt-1.5 w-6 h-6 rounded-full bg-yellow-400 border-4 border-blue-900"></div>
+                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-lg max-w-md hover:scale-105 transition-transform">
+                        <span class="text-blue-900 dark:text-yellow-400 font-black text-xl">2010 & 2011</span>
+                        <h4 class="font-bold text-lg mt-1">Back-to-Back Glory</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">CSK became the first team to defend their title, cementing the "Dhoni Era".</p>
+                    </div>
+                </div>
+                <div class="mb-10 ml-8 relative">
+                    <div class="absolute -left-[42px] mt-1.5 w-6 h-6 rounded-full bg-yellow-400 border-4 border-blue-900"></div>
+                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-lg max-w-md hover:scale-105 transition-transform">
+                        <span class="text-blue-900 dark:text-yellow-400 font-black text-xl">2018</span>
+                        <h4 class="font-bold text-lg mt-1">The Grand Return</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">The "Dad's Army" defied odds to win the trophy after a 2-year hiatus.</p>
+                    </div>
+                </div>
+                <div class="mb-10 ml-8 relative">
+                    <div class="absolute -left-[42px] mt-1.5 w-6 h-6 rounded-full bg-yellow-400 border-4 border-blue-900"></div>
+                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl shadow-lg max-w-md hover:scale-105 transition-transform">
+                        <span class="text-blue-900 dark:text-yellow-400 font-black text-xl">2023</span>
+                        <h4 class="font-bold text-lg mt-1">The 5th Star</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">A thrilling last-ball finish secured a record-equaling 5th title.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-950 text-white py-10 text-center">
+        <div class="flex justify-center gap-6 mb-4 text-xl">
+            <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="text-sm opacity-50">&copy; 2026 Chennai Super Kings Fan Club. For Educational Purposes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -38,7 +38,8 @@ This website captures the spirit and excitement of supporting an IPL franchise t
 
 ```
 Task2/
-│
+│── images/
+    └── assets/
 ├── index.html
 ├── about.html
 ├── players.html
@@ -46,8 +47,7 @@ Task2/
 ├── stats.html
 ├── style.css
 ├── script.js
-└── images/
-    └── assets/
+
 ```
 
 ---
@@ -63,5 +63,3 @@ Task2/
 * 🗳️ Basic fan engagement feature (poll/interaction)
 
 ---
-
-I’ll customize this README to look more advanced and internship-level impressive 🔥
